@@ -88,10 +88,10 @@ class StrategyTwo():
         data.rename(columns={'Adj Close': 'Close'}, inplace=True)
         
         if self.use_bb:
-            self.data['Mean'] = data['Close'].rolling(window=10).mean()
-            self.data['Std'] = data['Close'].rolling(window=10).std()
-            self.data['Upper_Threshold'] = data['Mean'] + 2 * data['Std']
-            self.data['Lower_Threshold'] = data['Mean'] - 2 * data['Std']
+            data['Mean'] = data['Close'].rolling(window=10).mean()
+            data['Std'] = data['Close'].rolling(window=10).std()
+            data['Upper_Threshold'] = data['Mean'] + 2 * data['Std']
+            data['Lower_Threshold'] = data['Mean'] - 2 * data['Std']
 
         if self.use_sma_short:
             data['Sma_short'] = data['Close'].rolling(window=self.sma_short_period).mean()
