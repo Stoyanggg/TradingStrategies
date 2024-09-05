@@ -14,7 +14,7 @@ Strategy One is designed to identify buying opportunities based on consecutive d
 - **Adjustable Stop Loss and Take Profit:** The stop loss and take profit percentages can be easily modified to suit different risk appetites and trading styles. For instance, you can set a stop loss between 2% and 4% and adjust the take profit accordingly.
 
 **Usage:**
-To use this strategy, modify the stop loss, take profit, and falling days parameters in the `strategy_one.py` file.
+To use this strategy, modify the stop loss, take profit, and falling days parameters in the `strategy-one.py` file.
 
 ### Strategy Two
 
@@ -26,7 +26,7 @@ Strategy Two incorporates several well-known technical indicators, including Sim
 - **Flexible Indicator Settings:** Customize the parameters for each indicator as needed to optimize performance.
 
 **Usage:**
-Modify the `strategy_two.py` file to enable or disable the desired indicators and adjust their parameters.
+Modify the `strategy-two.py` file to enable or disable the desired indicators and adjust their parameters.
 
 ### Best SMA Optimization
 
@@ -39,6 +39,3 @@ The `best_sma.py` file provides functionality to test and optimize the performan
 
 **Usage:**
 Run the `best_sma.py` file to test different SMA settings and use the results to configure Strategy Two.
-
-## Getting Started
-
