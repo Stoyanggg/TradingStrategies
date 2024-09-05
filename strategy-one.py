@@ -113,7 +113,7 @@ class StrategyOne():
             # Check for stop loss and selling conditions if a position is open
             
             if self.position:
-    # Selling Condition: If price goes up by 5% from the buy price
+    # Selling Condition: If price goes up by 15% from the buy price
     
               if self.data['Close'][i] >= self.buy_price * (1 + take_profit/100):
                 sell_price = self.data['Close'][i]
@@ -124,7 +124,7 @@ class StrategyOne():
                 self.position = False  # Reset position after selling
                 print(f'Sold at {round(sell_price,2)}, profit: {round(profit_loss,2)}, account after selling: {round(self.account,2)}')
 
-              # Stop-Loss Condition: If price drops by 2% from the buy price
+              # Stop-Loss Condition: If price drops by 5% from the buy price
             
               elif self.data['Close'][i] <= self.buy_price * (1 - stop_loss/100):
                 sell_price = self.data['Close'][i]
